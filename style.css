@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+/*Logo Kalender*/
+#calendar-logo {
+    font-size: 4.4em;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    line-height: 1.42857143;
+    text-align: center;
+    color: #337ab7;
+    text-decoration: none;
+}
+header div {
+    width: 33.33333333%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+}
+/* Body Style */
+body
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    box-sizing: border-box;
+}
+/* Year style */
+.calendar-btn {
+    margin: auto;
+    background-color: #24aeff;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+    width: 20%;
+    cursor: pointer;
+    transition: .5s background-color;
+}
+
+.calendar-btn:hover{
+    background-color:#ddd;
+}
+#years {
+    display: block;
+}
+.dropdown
+{
+    /* display: none; */
+    position: absolute;
+    background-color: #fff;
+    color: #1caff6;
+    text-align: center;
+    font-size: 14pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 160px;
+    left: 0px;
+    z-index: 2000;
+    border:solid 1px #ccc;
+}
+.dropdown .dropdown-item
+{
+    cursor:pointer;
+    opacity: .7;
+    transition: .5s opacity;
+    font-size:10pt;
+    padding:5px;
+}
+.dropdown .dropdown-item:hover
+{
+    opacity: 1;
+}
+.years
+{
+    display:none;
+}
+/* Style Calendar */
+.calendar
+{
+    font-family: Trebuchet;
+    float: left;
+    width: 25%;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.month {
+    position: relative;
+    padding: .2em 0;
+    border-radius: 4px;
+    border: 1px solid #e78f08;
+    background: #f6a828 50% 50% repeat-x;
+    color: #fff;
+    font-weight: bold;
+    min-height: 0;
+    box-sizing: border-box;
+    font-size: 0.9em;
+    text-align: center;
+}
+.calendar-dates {
+    width: 100%;
+    font-size: .9em;
+    border-collapse: collapse;
+    margin: 0 0 .4em;
+    background-color: transparent;
+    border-spacing: 0;
+}
+tr {
+    width: 100%;
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+    font-size: .9em;
+    border-collapse: collapse;
+    font-family: Trebuchet MS,Tahoma,Verdana,Arial,sans-serif;
+}
+th {
+    padding: .7em .3em;
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    font-size: .9em;
+    border-collapse: collapse;
+}
+/* Calendar dates */
+.calendar-dates .days .day
+{
+    float:left;
+    width: calc(100% / 7);
+    padding: 1%;
+    font-size:12px;
+    text-align:center;
+    border: solid 1px #eee;
+}
+.calendar-dates .days .day.blank
+{
+    background-color: white;
+    border:none;
+}
+.calendar-dates .days .day.selected
+{
+    background-color: #111;
+    color: white;
+    cursor:pointer;
+    opacity: .5;
+    transition: .5s opacity;
+}
+.calendar-dates .days .day.selected:hover
+{
+    opacity: 1;
+}
+
+.calendar .calendar-dates .days .day:hover {
+    background:black;
+    color:white;
+}
+/* Hari kosong */
+.days .day.blank
+{
+    background-color: white;
+    border:none;
+}
